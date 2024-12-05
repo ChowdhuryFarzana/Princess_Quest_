@@ -21,7 +21,7 @@ Deployment: Heroku/GitHub Pages
 
 Clone the repository and navigate to the project directory.
 Set up a Python virtual environment and install dependencies from requirements.txt.
-Run the Flask app and open it in your browser at http://127.0.0.1:5000.
+Run the Flask app and open it in your browser.
 Interact with the application by solving quests using the available algorithms.
 Contribution
 
