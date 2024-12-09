@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Princess Quest</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body class="light-theme">
+        <h1> Princess Quest Problem</h1>
+        <p> This is the setup for the Pricess Quest problem adapted from CS 312 module by Isha Ela Chinniah '24 and Claudia Gonzalez-Vazquez '25. The website is created by Farzana Chowdhury '26 and Serafina Wang '26. </p>
+        <ul>
+            <li class="list"> A princess is about to go on a quest, but she doesn’t have all the skills required to complete it. </li>
+            <li class="list"> She has a list of abilities and talents required for her to succeed in her quest. </li>
+            <li class="list"> She has a group of friends who volunteered to go with her - each with a different set of talents that may or may not fit the ones she needs. </li>
+            <li class="list"> Who should she invite on her quest? She'd like to minimize how many friends to join. </li>
+        </ul>
+        <div>
+            <button class="btn"> Dark Theme </button>
+        </div>
+        <br>
+        <p> Please click on a quest that you would like the princess to try.</p>
+        <p> <b><i> Please only select one quest at each time. Before switching to another quest, please unselect the current quest.</i></b></p>
+        <div id="questOption">
+            <div class="selectQuestButtons">
+                <button type="questButton", class="questButtons" id="toggleBtnA" > Quest A </button>
+                <button type="questButton", class="questButtons" id="toggleBtnB" style="margin-left: 15px;"> Quest B </button>
+            </div>
+            <div class="questContentSelection">
+                <div class="contentA">
+                    <p class="contentA"> <b> Content for quest A: </b></p>
+                    <table class="contentA">
+                    <th>
+                        QuestA
+                    </th>
+                </table>
+                </div>
+            
+            <div class="contentB">
+                <p class="contentB"> <b> Content for quest B: </b> </p>
+                <table class="contentB">
+                    <th> <b> Quest B: Required Abilities/Talents </b></th>
+                    <tr> 
+                        <td id="healingB"> Healing </td>
+                    </tr>
+                    <tr> 
+                        <td id="flyingB"> Flying </td>
+                    </tr>
+                    <tr> 
+                        <td id="animalCommunicationB"> Animal Communication </td>
+                    </tr>
+                    <tr> 
+                        <td id="swordFightingB"> Sword Fighting </td>
+                    </tr>
+                    <tr> 
+                        <td id="treeClimbingB"> Tree Climbing </td>
+                    </tr>
+                    <tr> 
+                        <td id="mindControlB"> Mind Control </td>
+                    </tr>
+                    <tr> 
+                        <td id="telekinesisB"> Telekinesis </td>
+                    </tr>
+                    <tr> 
+                        <td> Time Manipulation </td>
+                    </tr>
+                    <tr> 
+                        <td> Invisibility </td>
+                    </tr>
+                    <tr> 
+                        <td> Shapeshifting </td>
+                    </tr>
+                </table>             
+                <br>
+                <p class="contentB"> <b>Below are the available friends for this quest.</b></p>
+                <p class="contentB"> You can click on each card and see the abilities that this friend will cover for the quest. </p>
+                <div id="questBFriend">
+                        <button class="contentB" id="buttonSol" style="margin-left: 15px;"> 
+                            <img class="contentB" id="SolB" src="card/Sol.png" alt="Sol" width="210" height="300"> 
+                        </button>
+                        <button class="contentB" id="buttonRobin" style="margin-left: 250px;"> 
+                            <img class="contentB" id="Robin"  src="card/Robin.png" alt="Robin" width="210" height="300">
+                        </button>
+                        <button class="contentB" id="buttonYoli" style="margin-left: 250px;">
+                            <img class="Yoli", id="Yoli" src="card/Yoli.png" alt="Yoli" width="210" height="300">
+                        </button>
+                        <br>
+                        <button class="contentB" id="buttonShrinidi" style="margin-left: 15px;">
+                            <img class="contentB" id="Shrinidi" src="card/Shrinidi.png" alt="Shrinidi" width="210" height="300">
+                        </button>
+                        <button class="contentB" id="buttonRosa" style="margin-left: 250px;">
+                            <img class="contentB" id="Rosa" src="card/Rosa.png" alt="Rosa" width="210" height="300">
+                        </button>
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+        <noscript> You need to enable JavaScript to view the full site. </noscript>
+    </body>
+</html>

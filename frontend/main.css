@@ -1,0 +1,106 @@
+:root {
+    --pink: #f4daec;
+    --white: #FFFFFF;
+    --black: #000000;
+  }
+
+body {
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: helvetica;  
+}
+
+li {
+    list-style: circle;
+}
+  
+.list {
+    list-style: square;
+}
+
+.light-theme {
+    --bg: var(--pink);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+  }
+  .dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--pink);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+  }
+
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 900px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+.questButtons:hover {
+    font-size: 15px;
+    cursor: pointer; background-color: peachpuff;
+}
+
+.contentA{
+    display: none;
+}
+
+.contentB{
+    display:none;
+}
+
+table, th, td {
+    border: 1px solid;
+}
+
+.highlighted{
+    background-color: yellow;
+}
+
+#buttonSol{
+    position: absolute;
+    top: 790px;
+    left: 80px;
+    height: 320px;
+    width: 230px;
+    
+}
+
+#buttonRobin{
+    position: absolute;
+    top: 790px;
+    left: 100px;
+    height: 320px;
+    width: 230px;
+}
+
+#buttonYoli{
+    position: absolute;
+    top: 790px;
+    left: 360px;
+    height: 320px;
+    width: 230px;
+}
+
+#buttonShrinidi{
+    position: absolute;
+    top: 1130px;
+    left: 185px;
+    height: 320px;
+    width: 230px;
+}
+
+#buttonRosa{
+    position: absolute;
+    top: 1130px;
+    left: 235px;
+    height: 320px;
+    width: 230px;
+}
