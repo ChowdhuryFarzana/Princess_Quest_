@@ -1,0 +1,243 @@
+:root {
+    --pink: #f4daec;
+    --white: #FFFFFF;
+    --black: #000000;
+  }
+
+body {
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: helvetica;  
+}
+
+li {
+    list-style: circle;
+}
+  
+.list {
+    list-style: square;
+}
+
+.light-theme {
+    --bg: var(--pink);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+  }
+  .dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--pink);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+  }
+
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 900px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+.questButtons{
+    font-size: 15px;
+}
+.questButtons:hover {
+    font-size: 15px;
+    cursor: pointer; background-color: peachpuff;
+}
+
+#toggleQuestAGreedy{
+    font-size: 15px;
+    position: absolute;
+    top: 1820px;
+    left: 250px;
+    height: 50px;
+    width: 150px;
+}
+
+#toggleQuestAGreedy:hover {
+    font-size: 15px;
+    cursor: pointer; background-color: peachpuff;
+}
+
+#toggleQuestABF{
+    font-size: 15px;
+    position: absolute;
+    top: 1820px;
+    left: 550px;
+    height: 50px;
+    width: 150px;
+}
+
+#toggleQuestABF:hover {
+    font-size: 15px;
+    cursor: pointer; background-color: peachpuff;
+}
+
+
+#toggleQuestAGreedyContentp{
+    position: absolute;
+    top:1875px;
+    left:100px;
+    max-width: 500px;
+    
+    
+}
+
+#toggleQuestABFContentp{
+    position: absolute;
+    top:1900px;
+    left:100px;
+    max-width: 500px;
+
+}
+
+#toggleQuestBGreedy{
+    font-size: 15px;
+    position: absolute;
+    top: 1600px;
+    left: 240px;
+    height: 50px;
+    width: 150px;
+}
+
+
+#toggleQuestBBF{
+    font-size: 15px;
+    position: absolute;
+    top: 1600px;
+    left: 530px;
+    height: 50px;
+    width: 150px;
+}
+
+#toggleQuestBGreedyContentp{
+    position: absolute;
+    top:1675px;
+    left:100px;
+    max-width: 700px;
+}
+
+
+#toggleQuestBBFContentp{
+    position: absolute;
+    top:1700px;
+    left:100px;
+    max-width: 700px;
+}
+
+.contentA{
+    display: none;
+}
+
+.contentB{
+    display:none;
+}
+
+table, th, td {
+    border: 1px solid;
+}
+
+.highlighted{
+    background-color: yellow;
+}
+
+#buttonPauA{
+    position: absolute;
+    top: 1130px;
+    left: 80px;
+    height: 320px;
+    width: 230px;
+    
+}
+
+#buttonYoliA{
+    position: absolute;
+    top: 1130px;
+    left: 100px;
+    height: 320px;
+    width: 230px;
+    
+}
+
+#buttonRosaA{
+    position: absolute;
+    top: 1130px;
+    left: 360px;
+    height: 320px;
+    width: 230px;
+    
+}
+
+#buttonAmaraA{
+    position: absolute;
+    top: 1470px;
+    left: 80px;
+    height: 320px;
+    width: 230px;
+    
+}
+
+#buttonRaziaA{
+    position: absolute;
+    top: 1470px;
+    left: 100px;
+    height: 320px;
+    width: 230px;
+
+}
+
+#buttonThaliaA{
+    position: absolute;
+    top: 1470px;
+    left: 360px;
+    height: 320px;
+    width: 230px;
+    
+}
+
+#buttonSolB{
+    position: absolute;
+    top: 890px;
+    left: 80px;
+    height: 320px;
+    width: 230px;
+    
+}
+
+#buttonRobinB{
+    position: absolute;
+    top: 890px;
+    left: 100px;
+    height: 320px;
+    width: 230px;
+}
+
+#buttonYoliB{
+    position: absolute;
+    top: 890px;
+    left: 360px;
+    height: 320px;
+    width: 230px;
+}
+
+#buttonShrinidiB{
+    position: absolute;
+    top: 1230px;
+    left: 185px;
+    height: 320px;
+    width: 230px;
+}
+
+#buttonRosaB{
+    position: absolute;
+    top: 1230px;
+    left: 235px;
+    height: 320px;
+    width: 230px;
+}
