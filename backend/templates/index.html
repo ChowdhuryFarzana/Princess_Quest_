@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Princess Quest</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Princess Quest</h1>
+        <form method="POST" action="/solve">
+            <label for="abilities_needed">Required Abilities (comma-separated):</label><br>
+            <input type="text" id="abilities_needed" name="abilities_needed" placeholder="Healing, Flying, ..." required><br><br>
+
+            <label for="friends">Friends and Their Abilities (format: Name: Ability1, Ability2...):</label><br>
+            <textarea id="friends" name="friends" rows="5" placeholder="Rosa: Healing, Flying, Shapeshifting\nEm: Tree Climbing, Mind Control, ..." required></textarea><br><br>
+
+            <label for="method">Choose Algorithm:</label><br>
+            <select id="method" name="method">
+                <option value="greedy">Greedy Algorithm</option>
+                <option value="brute_force">Brute Force</option>
+            </select><br><br>
+
+            <button type="submit">Solve</button>
+        </form>
+
+        {% if result %}
+        <div class="result">
+            <h2>Result</h2>
+            <p>Algorithm Used: {{ method }}</p>
+            <p>Selected Friends: {{ result }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
