@@ -43,9 +43,92 @@ li {
     background-color: var(--btnBg);
 }
 
+.questButtons{
+    font-size: 15px;
+}
 .questButtons:hover {
     font-size: 15px;
     cursor: pointer; background-color: peachpuff;
+}
+
+#toggleQuestAGreedy{
+    font-size: 15px;
+    position: absolute;
+    top: 1820px;
+    left: 250px;
+    height: 50px;
+    width: 150px;
+}
+
+#toggleQuestAGreedy:hover {
+    font-size: 15px;
+    cursor: pointer; background-color: peachpuff;
+}
+
+#toggleQuestABF{
+    font-size: 15px;
+    position: absolute;
+    top: 1820px;
+    left: 550px;
+    height: 50px;
+    width: 150px;
+}
+
+#toggleQuestABF:hover {
+    font-size: 15px;
+    cursor: pointer; background-color: peachpuff;
+}
+
+
+#toggleQuestAGreedyContentp{
+    position: absolute;
+    top:1875px;
+    left:100px;
+    max-width: 500px;
+    
+    
+}
+
+#toggleQuestABFContentp{
+    position: absolute;
+    top:1900px;
+    left:100px;
+    max-width: 500px;
+
+}
+
+#toggleQuestBGreedy{
+    font-size: 15px;
+    position: absolute;
+    top: 1600px;
+    left: 240px;
+    height: 50px;
+    width: 150px;
+}
+
+
+#toggleQuestBBF{
+    font-size: 15px;
+    position: absolute;
+    top: 1600px;
+    left: 530px;
+    height: 50px;
+    width: 150px;
+}
+
+#toggleQuestBGreedyContentp{
+    position: absolute;
+    top:1675px;
+    left:100px;
+    max-width: 700px;
+}
+
+
+#toggleQuestBBFContentp{
+    position: absolute;
+    top:1700px;
+    left:100px;
+    max-width: 700px;
 }
 
 .contentA{
@@ -64,42 +147,96 @@ table, th, td {
     background-color: yellow;
 }
 
-#buttonSol{
+#buttonPauA{
     position: absolute;
-    top: 790px;
+    top: 1130px;
     left: 80px;
     height: 320px;
     width: 230px;
     
 }
 
-#buttonRobin{
+#buttonYoliA{
     position: absolute;
-    top: 790px;
+    top: 1130px;
+    left: 100px;
+    height: 320px;
+    width: 230px;
+    
+}
+
+#buttonRosaA{
+    position: absolute;
+    top: 1130px;
+    left: 360px;
+    height: 320px;
+    width: 230px;
+    
+}
+
+#buttonAmaraA{
+    position: absolute;
+    top: 1470px;
+    left: 80px;
+    height: 320px;
+    width: 230px;
+    
+}
+
+#buttonRaziaA{
+    position: absolute;
+    top: 1470px;
+    left: 100px;
+    height: 320px;
+    width: 230px;
+
+}
+
+#buttonThaliaA{
+    position: absolute;
+    top: 1470px;
+    left: 360px;
+    height: 320px;
+    width: 230px;
+    
+}
+
+#buttonSolB{
+    position: absolute;
+    top: 890px;
+    left: 80px;
+    height: 320px;
+    width: 230px;
+    
+}
+
+#buttonRobinB{
+    position: absolute;
+    top: 890px;
     left: 100px;
     height: 320px;
     width: 230px;
 }
 
-#buttonYoli{
+#buttonYoliB{
     position: absolute;
-    top: 790px;
+    top: 890px;
     left: 360px;
     height: 320px;
     width: 230px;
 }
 
-#buttonShrinidi{
+#buttonShrinidiB{
     position: absolute;
-    top: 1130px;
+    top: 1230px;
     left: 185px;
     height: 320px;
     width: 230px;
 }
 
-#buttonRosa{
+#buttonRosaB{
     position: absolute;
-    top: 1130px;
+    top: 1230px;
     left: 235px;
     height: 320px;
     width: 230px;

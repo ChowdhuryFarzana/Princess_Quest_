@@ -77,6 +77,7 @@ toggleBtnB.addEventListener('click', function(){
     });
 });
 
+
 /**
  * Button click to highlight the skills for card Sol (quest B)
  */
@@ -95,19 +96,87 @@ const toggleBtnRobin= document.getElementById('buttonRobin');
 const animalCommunicationB=document.getElementById('animalCommunicationB');
 const swordFightingB=document.getElementById('swordFightingB');
 const flyingRobinB=document.getElementById('flyingB');
-// present
-const bool=true;
+let clickCounter=0;
 toggleBtnRobin.addEventListener('click', ()=> {
-    if(flyingRobinB.classList.toggle('highlighted', bool)){
-        flyingRobinB.classList.remove('highlighted');
-        flyingRobinB.classList.add('highlighted');
-        flyingRobinB.classList.toggle('highlighted');
-    }
-    else{
-        flyingRobinB.classList.toggle('highlighted');
-    }
+  
+    // TODO: implement the feature that will not unhighlight the talent that is already
+    // highlighted by the previous card (selected)
+    //-----------------------------------------------------------------------------------------
+
+    // // The skill is highlighted already by previous cards  
+    // if(isHighlighted('flyingB') && clickCount==1){
+    //     flyingRobinB.classList.add('highlighted');
+    // }
+    // if (!isHighlighted('flyingB') && clickCount==1){
+    //     flyingRobinB.classList.add('highlighted');
+    // }
+    // if(isHighlighted('flyingB') && !clickCount==1){
+    //     flyingRobinB.classList.toggle('highlighted');
+    // }
+    // if(isHighlighted('flyingB') && !clickCount==1){
+    //     flyingRobinB.classList.add('highlighted')
+    // }
+    // clickCount++;
+
+
 animalCommunicationB.classList.toggle('highlighted');
 swordFightingB.classList.toggle('highlighted')
-//flyingRobinB.classList.toggle('highlighted');
+flyingRobinB.classList.toggle('highlighted');
 });
 
+function isCellHighlighted(cell){
+      return cell.classList.contains('highlighted');
+}
+
+// const toggleBtnRobin= document.getElementById('buttonRobin');
+// const animalCommunicationB=document.getElementById('animalCommunicationB');
+// const swordFightingB=document.getElementById('swordFightingB');
+// const flyingRobinB=document.getElementById('flyingB');
+// toggleBtnRobin.addEventListener('click', ()=> {
+//     if(isCellHighlighted(document.getElementById('flyingB'))){
+//         // This cell is highlighted by previous cards
+//         flyingRobinB.classList.remove('highlighted'); 
+//     }
+//     else{
+//         flyingRobinB.classList.toggle('highlighted');
+//     }
+//     animalCommunicationB.classList.toggle('highlighted');
+//     swordFightingB.classList.toggle('highlighted')
+// });
+
+
+
+/**
+ * The code the show and hide the algorithm outcome for quest A when button Greedy Approach is clicked
+ */
+// TODO: still needs to fix this 
+const toggleQuestAGreedy= document.getElementById('toggleQuestAGreedy');
+const paragraph= document.getElementById('toggleQuestAGreedyContentp');
+
+toggleQuestAGreedy.addEventListener('click', function(){
+        if (paragraph.style.display==='none'){
+            paragraph.style.display='block';
+        }
+        else{
+            paragraph.style.display='none';
+        }
+    });
+    
+
+/**
+ * The code the show and hide the algorithm outcome for quest A when button Brute Force Approach is clicked
+ */
+// TODO: still needs to fix this
+const toggleQuestABF= document.getElementById('toggleQuestABF');
+const toggleQuestABFContent= document.querySelector(".toggleQuestABFContent");
+
+toggleQuestABF.addEventListener('click', function(){
+    toggleQuestABFContent.forEach(element => {
+        if (element.style.display==='none'){
+            element.style.display='block';
+        }
+        else{
+            element.style.display='none';
+        }
+    });
+});
