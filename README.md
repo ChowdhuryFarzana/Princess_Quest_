@@ -25,10 +25,3 @@ Run the Flask app and open it in your browser.
 Interact with the application by solving quests using the available algorithms.
 Contribution
 
-Contributions are welcome! Fork the repository, create a feature branch, and submit a pull request for review.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for more details.
-
-Explore the fascinating world of algorithms with Princess' Quest! 🚀
